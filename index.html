@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head> 
+
+  <body>
+    <h1 id="title">Video Game Survey</h1>
+    <p>Hello,</p>
+    <p id="description">Please take a few minutes of your time to fill in the following survey.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <div class="input-element">
+        <label id="name-label">
+          Name
+        </label>
+          <input id="name" type="text" placeholder="#name" required/>
+      </div>
+      <!-- Email -->
+      <div class="input-element">
+        <label id="email-label">
+          Email
+        </label>
+          <input id="email" type="email" placeholder="@email" required/>
+      </div>
+      <!-- Age -->
+      <div class="input-element">
+        <label id="number-label">
+          Age
+        </label>
+          <input id="number" type="number" placeholder="#age" min="5" max="55" required/>
+      </div>
+      <!-- Select -->
+      <div class="input-element">
+        <label id="select-label">
+          What's your favorite genre?
+        </label>
+          <select id="dropdown">
+            <option></option>
+            <option>Metroidvania</option>
+            <option>Souls-like</option>
+            <option>Rogue-Likes</option>
+            <option>Indie</option>
+          </select>
+      </div>
+      <!-- Radio -->
+      <div class="input-element">
+        <label>On average, how many hours per week do you spend playing video games?</label>
+      </div>
+      <div class="input-element">
+        <label><input type="radio" name="hours" value=" 2-5"></input>2-5 Hours</label>
+      </div>
+      <div class="input-element">
+        <label><input type="radio" name="hours" value=" 5-10"></input>5-10 Hours</label>
+      </div>
+      <div class="input-element">
+        <label><input type="radio" name="hours" value=" 10-25"></input>10-25 Hours</label>
+      </div>
+      <div class="input-element">
+        <label><input type="radio" name="hours" value=" 25+"></input>25+ Hours</label>
+      </div>
+      <!-- Checkbox -->
+      <div class="input-element">
+        <label>What platforms do you game on?
+        </label>
+      </div>
+      <div class="input-element">
+      <label><input type="checkbox" name="platform" value="pc"></input>Pc</label>
+      </div>
+      <div class="input-element">
+        <label><input type="checkbox" name="platform" value="playstation"></input>Playstation</label>
+      </div>
+      <div class="input-element">
+        <label><input type="checkbox" name="platform" value="xbox"></input>Xbox</label>
+      </div>
+      <div class="input-element">
+        <label><input type="checkbox" name="platform" value="nitendo"></input>Nitendo</label>
+      </div>
+      <!-- Textarea -->
+      <div class="input-element">
+        <label>Is there anything else you'd like to share about your gaming experiences or preferences?</label>
+        <textarea type="textarea"></textarea>
+      </div>
+      <div class="input-element">
+      <button id="submit" type="submit">
+        Submit
+      </button>
+      </div>
+    </form>
+  </body>
+</html>
